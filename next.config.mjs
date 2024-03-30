@@ -7,14 +7,14 @@ const nextConfig = {
     reactRoot: true,
     suppressHydrationWarning: true,
   },
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: '/api/:path*',
-  //       destination: 'https://elearning-backend-1dwo.onrender.com/api/v1/:path*',
-  //     },
-  //   ];
-  // },
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://elearning-backend-1dwo.onrender.com/api/v1/:path*',
+      },
+    ];
+  },
 };
 
 export default nextConfig;
